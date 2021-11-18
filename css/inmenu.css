@@ -1,0 +1,42 @@
+/* menu css */
+.menu-warpper{
+    /* ,url(/image/other/menuback_O.webp) */
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.755),rgba(255,255,255,.755)); */
+    
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/* ===================================== */
+
+
+/* ===================================== */
+.menu-cards{
+    width: 100vw;
+    justify-content: center;align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.menu-card{
+    width: 250px;
+    margin: 30px 0;
+}
+.menu-card img{
+    width: 100%;height: 100%;
+    border: double thick ;
+    border-radius: 50%;
+}
+.menu-card > div{
+    justify-content: center;
+    border-radius: 10px;
+    background-color: var(--color-whiht);
+    margin-top: 10px;
+    padding: 10px 0;
+    border: double thick ;
+}
+
+
+@media only screen and (max-width:430px) {
+    .menu-warpper{padding: 5px 0;}
+}

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/css/default.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/inbrand.css">
+    <link rel="stylesheet" href="/css/inmenu.css">
+    <link rel="stylesheet" href="/css/infranchise.css">
+    <link rel="stylesheet" href="/css/instore.css">
+    <title>LianProject</title>
+</head>
+
+<body>
+    <div id="index"></div>
+    <header data-includ='/component/Layout/header.html'></header>
+    <main>
+
+        <article class="flex-row first-warpper">
+            <section class="ovarlap">
+            </section>
+        </article>
+        <article class="flex-row second-warpper" id="warpper0">
+            <div class="flex-col second-cards">
+                <div class="second-card"></div>
+                <div class="second-card"></div>
+                <div class="second-card"></div>
+            </div>
+        </article>
+
+        <article class="flex-row brand-watpper" id="brand">
+
+            <section class="flex-col watpper-section">
+                <div class="warpper-title brand-title">
+                    <h3>BRAND</h3>
+                </div>
+
+                <div class="flex-row history-warpper">
+                    <div class="flex-col table-warpper">
+                        <table class="history-table">
+
+                            <tbody>
+                                <tr class="history-tr-top"></tr>
+                                <tr class="history-tr"></tr>
+                                <tr class="history-tr"></tr>
+                                <tr class="history-tr-bottom"></tr>
+                            </tbody>
+
+                        </table>
+                    </div>
+                    <div class="flex-row history-controller">
+                        <div class="history-prev">&#8249;</div>
+                        <div class="history-next">&#8250;</div>
+                    </div>
+                </div>
+
+
+                <div class="flex-row brand-rolling"></div>
+                <div class="flex-row brand-rolling"></div>
+
+            </section>
+
+        </article>
+
+        <article class="flex-row menu-warpper first" id="menu">
+            <section class="flex-col watpper-section">
+                <div class="warpper-title menu-title">
+                    <h3>Menu</h3>
+                </div>
+                <div class="flex-col menu-products">
+                    <div class="flex-col menu-product"></div>
+                </div>
+                <section class="flex-col">
+                    <div class="flex-row menu-cards"></div>
+                </section>
+            </section>
+        </article>
+
+
+
+        <article class="flex-row franchise-warpper" id="franchise">
+            <section class="flex-col watpper-section">
+                <div class="warpper-title franchise-title">
+                    <h3>프렌차이즈 문의</h3>
+                </div>
+                <form action="">
+                    <div class="form-elements">
+                        <fieldset class="flex-col franchise-table-warpper">
+                            <table>
+                                <colgroup>
+                                    <col style="width: 20%;">
+                                    <col>
+                                </colgroup>
+                                <tbody>
+                                    <tr class="table-tr">
+                                        <td>
+                                            <input type="text" name="name" id="name" required>
+                                            <span class="placeholder">이름</span>
+                                        </td>
+                                    </tr>
+                                    <tr class="table-tr">
+                                        <td>
+                                            <input type="text" name="phone01" id="phone01" required>
+                                            <span class="placeholder">연락처</span>
+                                        </td>
+                                    </tr>
+                                    <tr class="table-tr">
+                                        <td>
+                                            <input type="text" name="email" id="email" required>
+                                            <span class="placeholder">이메일</span>
+                                        </td>
+                                    </tr>
+                                    <tr class="table-tr">
+                                        <td>
+                                            <textarea name="inquiries" id="inquiries" cols="30" rows="10"></textarea>
+                                            <span class="placeholder">문의 사항</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="flex-row privacy-check">
+                                <input type="checkbox" name="privacy" id="privacy" required>
+                                <label for="privacy">개인정보처리방침에 동의합니다.</label>
+                                <span>[보기]</span>
+                            </div>
+                        </fieldset>
+                        <div class="flex-row franchise-buttons">
+                            <button class="button-success"><strong>보내기</strong></button>
+                            <div class="flex-row planchack">
+                                <a href="/pages/franchisepage.html">플렌확인하러가기</a>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="flex-row privacy-modal">
+                    <div class="flex-col privacy-content">
+                        <div class="privacy-cencel"><span>&#10006;</span></div>
+                        <p>
+                            회사이름[이하 회사]은 고객님의 개인정보를 중요시하며, '정보통신망 이용촉진 및 정보보호'에 관한 법률을 준수하고 있습니다.
+                        </p>
+                        <p>
+                            <strong>제 1조 (개인정보 수집 및 이용 목적)</strong><br>
+                            회사는 이용자의 사전 동의 없이는 이용자의 개인 정보를 공개하지 않으며, 원활한 고객상담, 각종 서비스의 제공을 위해 아래와 같이
+                            개인정보를 수집하고 있습니다.
+                        </p>
+                        <p>
+                            <strong>제 2조 (개인정보 수집항목)</strong><br>
+                            -필수항목 : 성명, 연락처, 이메일<br>
+                            -선택항목 : 문의내용
+                        </p>
+                        <p>
+                            <strong>제 3조 (개인정보 처리 및 보유기간)</strong><br>
+                            원칙적으로 개인정보 수집 및 이용목적이 달성된 후에는 해당 정보를 지체 없이 파기합니다.
+                            그리고 상법, 전자상거래 등에서의 소비자보호에 관한 법률 등 관계법렵의 규정에 의하여 보존할 필요가 있는 경우 회사는 관계법령에서 정한일정한 기간 동안 정보를
+                            보관합니다.
+                            이 경우 회사는 보관하는 정보를 그 보관의 목적으로만 이용하며 보존기간은 아래와 같습니다.<br>
+                            - 계약 또는 청약철회 등에 관한 기록 : 5년(전자상거래등에서의 소비자보호에 관한 법률)<br>
+                            - 소비자의 불만 또는 분쟁처리에 관한 기록 : 3년(전자상거래등에서의 소비자 보호에 관한 법률)<br>
+                            - 시용정보의 수집/처리 및 이용 등에 관한 기록 : 3년(신용정보의 이용 및 보호에 관한 법률)<br>
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </article>
+
+
+        <article class="flex-row stores-warpper" id="stores">
+            <section class="flex-col watpper-section">
+                <div class="warpper-title store-title">
+                    <h3>매장정보</h3>
+                </div>
+                <div class="flex-row stores-cards">
+                    <div class="flex-col store-card">
+                        <div class="flex-col card-inner-warpper front">
+                            <div class="flex-col store-card-title"><b>연남점</b></div>
+                            <span class="card-turn-btn">Infomation</span>
+                            <div class="flex-col store-card-img">
+                                <img src="/image/stores/yunnam/yunnamstore01.webp" alt="">
+                                <img src="/image/stores/yunnam/yunnamstore05.webp" alt="">
+                            </div>
+                        </div>
+                        <div class="flex-col card-inner-warpper back">
+                            <div class="flex-col store-card-title back"><b>연남점</b></div>
+                            <span class="card-turn-btn back">return</span>
+                            <div class="store-card-info">
+                                <img src="/image/other/storeback.webp" alt="back-ground">
+                                <table>
+                                    <tbody>
+                                        <tr><td>주소</td><td>:</td><td>서울시</td></tr>
+                                        <tr><td>영업시간</td><td>:</td><td>11:00 ~ 22:00</td></tr>
+                                        <tr><td>연락처</td><td>:</td><td>0507-1453-7025</td></tr>
+                                        <tr><td>제품나오는시간</td><td>:</td><td>00:00, 00:00</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+        </article>
+    </main>
+    <footer data-includ='/component/Layout/footer.html'></footer>
+    <script src="/js/default.js"></script>
+    <script>includeHTML()</script>
+
+
+    <script src="/js/index.js"></script>
+    <script src="/js/inbrand.js"></script>
+    <script src="/js/inmenu.js"></script>
+    <script src="/js/infranchise.js"></script>
+    <script src="/js/instore.js"></script>
+</body>
+
+</html>

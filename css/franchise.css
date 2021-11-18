@@ -1,0 +1,130 @@
+.flex-row.franchise-warpper{
+    border-bottom: solid 1px;
+    height: 95vh;
+}
+.franchise-steps{
+    position: relative;
+    min-height: 65%;
+    margin: 0 10%;
+    flex-wrap: wrap;
+    justify-content: center;align-items: center;
+    
+}
+.step{
+    width: 300px;height: 150px;
+    justify-content: center;align-items: center;
+    position: relative;
+    background-color: var(--color-whiht);
+    font-family: 'toast210_B', fallback, monospace;
+    z-index: 2;
+}
+
+
+
+.step.vol1::before,.step.vol2::before{
+    position: absolute;content: '';
+    width: 100%;height: 100%;top: 0;
+    z-index: -1;
+}
+.step.vol1::before{left: 0;background-image: linear-gradient(90deg,var(--color-generic06)50%,var(--color-whiht)50%) ;}
+.step.vol2::before{right: 0;background-image: linear-gradient(270deg,var(--color-generic07)50%,var(--color-whiht)50%);}
+
+
+.step-title{
+    position: relative;
+    font-size: 2.5em;
+    z-index: 2;
+}
+
+.step.vol1 .step-title::before,
+.step.vol1 .step-title::after,
+.step.vol2 .step-title::before,
+.step.vol2 .step-title::after{
+    transition: all .3s linear;
+    content: '';
+    position: absolute;top: 0;
+    width: 50%;height: 100%;
+    z-index: -1;
+}
+.step.vol1 .step-title::before{
+    left: 0%;
+    background-color: var(--color-whiht);
+}
+.step.vol1 .step-title::after{
+    right: 0;
+    background-color: var(--color-generic06);
+}
+.step.vol2 .step-title::before{
+    right: 0%;
+    background-color: var(--color-whiht);
+}
+.step.vol2 .step-title::after{
+    left: 0%;
+    background-color: var(--color-generic07);
+}
+
+.vol1 .step-title span,
+.vol2 .step-title span{
+    transition: all .3s linear;
+}
+.vol1 .step-title span{
+    background: linear-gradient(90deg, var(--color-generic06)50%,var(--color-whiht)50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.vol2 .step-title span{
+    background: linear-gradient(270deg, var(--color-generic07)50%,var(--color-whiht)50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.step.vol1:hover .step-title::after{right: 50%;}
+.step.vol2:hover .step-title::after{left: 50%;}
+.step.vol1:hover .step-title span,
+.step.vol2:hover .step-title span{opacity: 0;}
+
+.step-sub-title,
+.step-sub-content{
+    width: 50%;
+    position: absolute;
+    transition: all .2s linear;
+    transition-delay: .5s;
+    opacity: 0;
+    z-index: 2;
+}
+.step:hover .step-sub-title,
+.step:hover .step-sub-content{
+    opacity: 1;
+}
+.step.vol1 .step-sub-title{
+    color: var(--color-generic07);
+    top: 50%;left: 25%;
+    transform: translate(-50%, -50%);
+}
+.step.vol1 .step-sub-content{
+    top: 50%;left: 75%;
+    transform: translate(-50%, -50%);
+}
+.step.vol2 .step-sub-title{
+    color: var(--color-generic07);
+    top: 50%;left: 25%;
+    transform: translate(-50%, -50%);
+}
+.step.vol2 .step-sub-content{
+    color: var(--color-generic06);
+    top: 50%;left: 75%;
+    transform: translate(-50%, -50%);
+}
+/* =================== opening-cost ================== */
+.flex-row.opening-cost-warpper section{margin: 0 10%;}
+.unit{text-align: end;}
+.cost-table-oen{
+    border-collapse: collapse;
+    border-top: solid 2px;
+    border-bottom: solid 2px;
+}
+.cost-table-oen th{border-bottom: solid thin;}
+
+
+

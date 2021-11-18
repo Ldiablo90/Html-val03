@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/default.css">
+    <link rel="stylesheet" href="/css/franchise.css">
+
+    <title>LianProject</title>
+</head>
+<body>
+    <header data-includ='/component/Layout/header.html'></header>
+    <main>
+
+        <article class="flex-row franchise-warpper" >
+            <section class="flex-col watpper-section">
+                <div class="warpper-title"><h3>프렌차이즈</h3></div>
+                <div class="flex-row franchise-steps"></div>
+                
+            </section>
+        </article>
+
+        <article class="flex-row opening-cost-warpper">
+            <section class="flex-col watpper-section">
+                <div class="opening-cost">
+                    <div class="warpper-title">
+                        <h3>개설비용</h3>
+                    </div>
+                    <div class="unit">단위 : 만원(VAT 별도)</div>
+                    <div class="flex-col">
+                        <table class="cost-table-oen">
+                            <colgroup>
+                                <col>
+                                <col>
+                                <col>
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>구분</th>
+                                    <th>내역</th>
+                                    <th>비용</th>
+                                </tr>
+                            </thead>
+                            <tbody class="cost-table-oen-body">
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+        </article>
+
+    </main>
+    <footer data-includ='/component/Layout/footer.html'></footer>
+    <script src="/js/franchise.js"></script>
+    <script src="/js/default.js"></script>
+    <script>includeHTML()</script>
+</body>
+</html>
